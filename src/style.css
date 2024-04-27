@@ -1,0 +1,131 @@
+/* To make the links scroll to its section*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 20px;
+  background-color: #0f384d;
+  color: #ffffff;  
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  min-width: 250px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  border: 5px solid #edbf3e;
+  text-align: center;
+}
+
+p {
+  line-height: 35px;
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+#navbar {
+  width: 100%;
+  height: 100%;
+  background-color: #ba2365;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar header {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;  
+  background-color: #8da12d;
+}
+
+#navbar ul {
+  padding: 0;
+  font-size: 20px;
+}
+
+#navbar ul li {
+  color: #000;
+  margin-bottom: 7px;
+  list-style: none;
+  width: 100%;
+}
+
+#navbar ul li a {
+  color: #ffffff;
+  height: 30px;
+  text-decoration: none;
+}
+/* To change the color of the link (anchor tag)*/
+#navbar ul li a:hover {
+  color: #0f384d;  
+}
+
+/* Main Content*/
+.content {
+  margin: 0, 20px 20px;
+}
+
+.main-section {
+  min-height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #ba2365;
+}
+
+.main-section header {
+  font-size: 30px;
+  font-weight: bold; 
+  padding-top: 30px;
+  }
+
+.main-section ul li {
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 900px) {  
+  #navbar header {
+    font-size: 25px;   
+    text-align: center;
+  }
+  
+  #navbar {
+    width: 280px;
+    height: 100vh;
+    background-color: #ba2365;
+    margin-top: 0px;
+    text-align: center;
+    position: fixed;
+    padding: 0;
+  }
+  
+  .divider {
+    width: 100%;
+    margin: 0;
+    min-height: 55px;
+    background-color: #edbf3e;
+  }
+  
+  #navbar header,
+  #navbar ul {
+    padding: 5px;
+  }
+  
+  #navbar header {       
+    background-color: #8da12d;
+  }
+     
+  .content {
+    margin-left: 320px;
+    margin-right: 20px;
+  }
+}
